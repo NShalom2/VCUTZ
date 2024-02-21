@@ -1,0 +1,1573 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*Header Styling*/
+
+.header {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    background: #2c3e50;
+}
+
+.nav-menu > ul {
+    display: flex;
+}
+
+.menu-element {
+    margin: 40px 15px 30px 40px;
+    padding: 30px;
+    font-size: 25px;
+    font-family: "Inria Sans", sans-serif;
+}
+
+.menu-element > a {
+    color: white;
+    transition: 0.3s;
+}
+
+.menu-element > a:hover {
+    transition: 0.3s;
+    color: firebrick;
+}
+
+.logo-image {
+    height: 125px;
+    padding: 15px 120px;
+}
+
+.toggle-btn {
+    float: right;
+    color: white;
+    font-size: 40px;
+    margin-top: 60px;
+    margin-right: 40px;
+    display: none;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 110px;
+    height: 0;
+    width: 280px;
+    text-align: center;
+    background: #203345;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 2;
+}
+
+.dropdown-menu.open {
+    height: 410px;
+    transition: 0.3s;
+}
+
+.dropdown-menu li {
+    margin: 30px;
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Background Video Styling*/
+
+.video {
+    width: 100%;
+    filter: brightness(55%);
+    z-index: 1;
+}
+
+/*Attention Grabber Text and Button Styling*/
+
+.background-text-and-button {
+    margin-left: 20px;
+}
+
+.background-text > h1 {
+    position: absolute;
+    padding: 20px 100px;
+    color: white;
+    font-size: 70px;
+    top: 45%;
+    left: 10%;
+    width:700px;
+    line-height: 100px;
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+}
+
+.buttons {
+    cursor: pointer;
+    transition: .3s;
+    border: none;
+}
+
+.buttons:hover {
+    background: #2c3e60;
+    transition: .3s;
+    padding: 51px 51px;
+}
+
+.btn-1 {
+    padding: 45px 50px;
+    position: absolute;
+    top: 85%;
+    left: 15%;
+    border-radius: 10px;
+    background: #2c3e50;
+    color: white;
+}
+
+.btn-1 > span {
+    font-size: 25px;
+}
+
+/*Call to Action Styling*/
+
+.call-to-action {
+    height: 450px;
+    text-align: center;
+}
+
+.title-1 {
+    margin-top: 40px;
+    font-size: 50px;
+    font-family: "Jacques Francois Shadow", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #2c3e50;
+    padding: 0 200px;
+}
+
+.button-2 {
+    margin-top: 20px;
+    padding: 30px;
+}
+
+.btn-2 {
+    padding: 50px 50px;
+    font-size: 25px;
+    border-radius: 10px;
+    background: #2c3e50;
+    color: white;
+}
+
+/*Styling for TExt Container 1*/
+
+.text-container-1 {
+    height: 600px;
+    text-align: center;
+    background: #2c3e50;
+    color: white;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+
+.paragraph-1, .paragraph-2, .paragraph-3 {
+    padding: 50px 120px;
+}
+
+.clickable-link {
+    text-decoration: underline;
+    color: #B888B6;
+    transition: .2s;
+}
+
+.clickable-link:hover {
+    color: indianred;
+    transition: .3s;
+}
+
+/*Image Container*/
+
+.slide-show-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.title-2 h2 {
+    text-align: center;
+}
+
+.slide-show {
+    display: flex;
+    overflow: hidden;
+}
+
+.image-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    padding: 30px;
+}
+
+.image-container img {
+    width: 500px; /* Adjust the width of each image */
+    height: auto;
+    margin-right: 10px; /* Adjust the spacing between images */
+}
+
+.title-2 > h2 {
+    margin-top: 30px;
+    font-size: 60px;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+/*Styling for Text Container 2*/
+
+.text-container-2 {
+    text-align: center;
+    height: 700px;
+    background: #CBCACA;
+}
+
+.paragraph-4 > p {
+    width: auto;
+    padding: 100px 400px;
+    font-family: "Inria Sans", sans-serif;
+    font-size: 40px;
+}
+
+.btn-3 {
+    padding: 50px 50px;
+    border-radius: 15px;
+    color: white;
+    background: #2c3e50;
+    font-size: 25px;
+}
+
+.paragraph-5 {
+    font-family: "Inria Sans", sans-serif;
+    margin-top: 30px;
+}
+
+.paragraph-5 > p {
+    font-size: 40px;
+    padding: 30px;
+}
+
+.paragraph-5 > span {
+    padding: 30px;
+    width: auto;
+    font-size: 45px;
+}
+
+/*Footer Styling*/
+
+.footer {
+    background: #2c3e50;
+    height: 675px;
+}
+
+.footer-logo {
+    padding: 30px;
+    text-align: center;
+}
+
+.footer-image {
+    height: 125px;
+}
+
+.footer-links {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    height: 350px;
+    color: white;
+    font-family: "Inria Sans", sans-serif;
+}
+
+.footer-links-1, .footer-links-2, .contact  {
+    text-align: center;
+    height: 300px;
+}
+
+.footer-links-1 > h2, .footer-links-2 > h2 {
+    padding: 10px;
+    font-size: 40px;
+    font-family: "Inria Sans", sans-serif;
+}
+
+.locations > ul > li, .footer-menu > ul > li {
+    padding: 8px;
+    font-size: 25px;
+}
+
+.footer-menu ul li a {
+    color: white;
+}
+
+.footer-menu ul li a:hover {
+    color: firebrick;
+}
+
+.contact h2 {
+    font-size: 40px;
+    padding: 10px;
+}
+
+.phone-and-email p {
+    font-size: 22px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 150px;
+}
+
+.socials p {
+    font-size: 25px;
+}
+
+.icons {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 30% 35% 35%;
+}
+
+.fa-brands {
+    font-size: 30px;
+    color: white;
+}
+
+.copyright p {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    font-family: "Inria Sans", sans-serif;
+}
+
+
+
+/*CONTACT US PAGE*/
+
+.contact-page {
+    font-family: "Inria Sans", sans-serif;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    padding: 15px 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+textarea {
+    height: 150px;
+}
+input[type="submit"] {
+    background-color: #2c3e50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+input[type="submit"]:hover {
+    background-color: #203345;
+}
+
+
+/*Services Page*/
+
+
+.prices {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    margin: 50px;
+}
+
+.services {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.context {
+    text-align: center;
+    padding: 0 60px;
+}
+
+.context > p {
+    padding: 10px 80px;
+}
+
+.table {
+    padding: 20px;
+}
+
+td {
+    padding: 20px 250px;
+}
+
+.table-header > th {
+    padding: 20px;
+}
+
+.table-header > th:nth-child(1){
+    text-align: left;
+}
+
+.table-rows:nth-child(odd) {
+    background-color: lightgrey;
+}
+
+table {
+    margin: 0;
+    border: 1px solid black;
+}
+
+table td, table th {
+    border: 1px solid black;
+    font-size: 20px;
+}
+
+.left-table {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.right-table {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.button-container-4 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.button-4 {
+    display: block;
+    height: 125px;
+    width: 250px;
+    background-color: #2c3e50;
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    transition: background-color 0.3s ease;
+    padding: 20px;
+}
+
+
+@media only screen and (min-width: 360px) and (max-width: 430px) {
+
+    .header {
+        height: 80px;
+    }
+
+    .logo-image {
+        height: 55px;
+        padding: 14px 50px;
+    }
+
+    .nav-menu .menu-element {
+        display: none;
+    }
+
+    .toggle-btn {
+        display: block;
+        font-size: 33px;
+        margin-top: 25px;
+    }
+
+    .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu .menu-element {
+        font-size: 20px;
+    }
+
+    .background-text h1 {
+        font-size: 18px;
+        padding: 30px;
+        top: 14%;
+        left: 8px;
+        width: 250px;
+        height: 125px;
+        line-height: 35px;
+    }
+
+    .btn-1 {
+        padding: 15px 25px;
+        top: 32%;
+        left: 9%;
+    }
+
+    .btn-1 span {
+        font-size: 10px;
+    }
+
+    .call-to-action {
+        height: 200px;
+    }
+
+    .title-1 {
+        padding: 0 100px;
+    }
+
+    .title-1 h2 {
+        font-size: 20px;
+    }
+
+    .button-2 {
+        padding: 10px;
+    }
+
+    .btn-2 {
+        padding: 15px 30px;
+    }
+
+    .btn-2 span {
+        font-size: 15px;
+    }
+
+    .text-container-1 {
+        height: 325px;
+    }
+
+    .paragraph-1, .paragraph-2, .paragraph-3 {
+        font-size: 15px;
+        padding: 30px 30px;
+    }
+
+    .slide-show-container {
+        height: 375px;
+    }
+
+    .slide-show {
+        grid-template-columns: 10% 80% 10%;
+    }
+
+    .image-container {
+        display: flex;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .title-2 h2 {
+        font-size: 30px;
+    }
+
+    .image-container img {
+        height: 250px;
+    }
+
+    .text-container-2 {
+        height: 350px;
+    }
+
+    .paragraph-4 p {
+        font-size: 22px;
+        padding: 30px 30px 25px 30px;
+    }
+
+    .btn-3 {
+        padding: 20px 30px;
+    }
+
+    .btn-3 span {
+        font-size: 15px;
+    }
+
+    .paragraph-5 p {
+        font-size: 22px;
+        padding: 10px;
+    }
+
+    .paragraph-5 span {
+        font-size: 25px;
+    }
+
+    .footer {
+        height: 445px;
+    }
+
+    .footer-logo {
+        padding: 20px 15px;
+    }
+
+    .footer-image {
+        height: 75px;
+    }
+
+    .footer-links {
+        height: 250px;
+        margin-top: 0;
+    }
+
+    .footer-links-1 h2 {
+        font-size: 18px;
+    }
+
+    .locations ul li {
+        font-size: 13px;
+    }
+
+    .footer-links-2 h2 {
+        font-size: 18px;
+    }
+
+    .footer-menu ul li {
+        font-size: 13px;
+    }
+
+    .contact h2 {
+        font-size: 18px;
+    }
+
+    .phone-and-email p {
+        font-size: 9px;
+    }
+
+    .socials {
+        padding: 30px 15px;
+    }
+
+    .socials p {
+        font-size: 17px;
+    }
+
+    .icons {
+        padding: 10px;
+    }
+
+    .fa-brands {
+        font-size: 20px;
+    }
+
+    .copyright p {
+        font-size: 20px;
+    }
+
+    .context {
+        width: 290px;
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    .context p {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .table {
+        padding: 10px;
+    }
+
+    .table table {
+        width: 370px;
+    }
+
+    .left-table {
+        padding: 10px;
+        width: 130px;
+        font-size: 15px;
+    }
+
+    .right-table {
+        padding: 10px;
+        font-size: 15px;
+        width: 100px;
+    }
+
+    .button-container-4 {
+        padding: 0 0 20px 0;
+    }
+
+    .button-4 {
+        width: 150px;
+        height: 75px;
+    }
+
+    .button-4 span {
+        font-size: 18px;
+    }
+
+    .container {
+        width: 300px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (min-width: 431px) and (max-width: 640px) {
+
+    .header {
+        height: 110px;
+    }
+
+    .toggle-btn {
+        margin-top: 30px;
+    }
+
+    .logo-image {
+        height: 75px;
+        padding-left: 75px;
+    }
+
+    .nav-menu .menu-element {
+        display: none;
+    }
+
+    .toggle-btn {
+        display: block;
+    }
+
+    .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu .menu-element {
+        font-size: 21px;
+    }
+
+    .dropdown-menu.open {
+        height: 425px;
+    }
+
+    .background-text h1 {
+        font-size: 23px;
+        padding: 40px 35px;
+        top: 90px;
+        width: 300px;
+        line-height: 45px;
+    }
+
+    .btn-1 {
+        padding: 20px 35px;
+        top: 280px;
+        left: 75px;
+    }
+
+    .btn-1 span {
+        font-size: 15px;
+    }
+
+    .call-to-action {
+        height: 250px;
+    }
+
+    .call-to-action {
+        height: 250px;
+    }
+
+    .title-1 {
+        padding: 0 70px;
+    }
+
+    .title-1 h2 {
+        font-size: 28px;
+    }
+
+    .btn-2 {
+        padding: 20px 30px;
+    }
+
+    .btn-2 span {
+        font-size: 15px;
+    }
+
+    .text-container-1 {
+        height: 420px;
+    }
+
+    .paragraph-1, .paragraph-2, .paragraph-3 {
+        padding: 35px 60px;
+        font-size: 20px;
+    }
+
+    .slide-show-container {
+        height: 450px;
+    }
+
+    .title-2 h2 {
+        font-size: 38px;
+    }
+
+    .image-container img {
+        height: 330px;
+        width: auto;
+    }
+
+    .text-container-2 {
+        height: 375px;
+    }
+
+    .paragraph-4 p {
+        font-size: 25px;
+        padding: 30px;
+    }
+
+    .btn-3 {
+        padding: 20px 25px;
+    }
+
+    .btn-3 span {
+        font-size: 15px;
+    }
+
+    .paragraph-5 p {
+        font-size: 22px;
+    }
+
+    .paragraph-5 span {
+        font-size: 26px;
+    }
+
+    .footer {
+        height: 500px;
+    }
+
+    .footer-image {
+        height: 75px;
+    }
+
+    .footer-links {
+        height: 250px;
+    }
+
+    .footer-links-1 h2 {
+        font-size: 25px;
+    }
+
+    .locations ul li {
+        font-size: 20px;
+    }
+
+    .footer-links-2 h2 {
+        font-size: 25px;
+    }
+
+    .footer-menu ul li {
+        font-size: 20px;
+    }
+
+    .contact h2 {
+        font-size: 25px;
+    }
+
+    .phone-and-email p {
+        font-size: 10px;
+    }
+
+    .socials {
+        padding: 50px;
+    }
+
+    .socials p {
+        font-size: 20px;
+    }
+
+    .fa-brands {
+        font-size: 20px;
+    }
+
+    .copyright {
+        padding-top: 20px;
+    }
+
+    .copyright p {
+        font-size: 20px;
+    }
+
+    .context {
+        font-size: 22px;
+        padding-bottom: 20px;
+        width: auto;
+    }
+
+    .context p {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .table {
+        padding: 20px;
+    }
+
+    .table table {
+        width: 550px;
+    }
+
+    .left-table {
+        padding: 10px;
+        width: 130px;
+        font-size: 15px;
+    }
+
+    .right-table {
+        padding: 10px;
+        font-size: 15px;
+        width: 100px;
+    }
+
+    .button-container-4 {
+        padding-bottom: 50px;
+    }
+
+    .button-4 {
+        height: 80px;
+        width: 160px;
+    }
+
+    .button-4 span {
+        font-size: 20px;
+    }
+
+    .footer-logo {
+        padding: 20px;
+    }
+
+    .footer-links-1 h2,
+    .footer-links-2 h2,
+    .contact h2 {
+        font-size: 25px;
+    }
+
+    .locations ul li,
+    .footer-menu ul li a {
+        font-size: 18px;
+    }
+
+    .socials {
+        padding: 15px;
+        font-size: 10px;
+    }
+
+    .icons {
+        padding: 5px;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 867px){
+
+    .header {
+        height: 110px;
+    }
+
+    .toggle-btn {
+        margin-top: 40px;
+    }
+
+    .logo-image {
+        height: 80px;
+        padding-left: 60px;
+    }
+
+    .nav-menu .menu-element {
+        display: none;
+    }
+
+    .toggle-btn {
+        display: block;
+    }
+
+    .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu .menu-element {
+        font-size: 21px;
+    }
+
+    .dropdown-menu.open {
+        height: 425px;
+    }
+
+    .background-text h1 {
+        font-size: 30px;
+        padding: 50px 40px;
+        top: 100px;
+        left: 30px;
+        width: 410px;
+        line-height: 60px;
+    }
+
+    .btn-1 {
+        padding: 20px 30px;
+        top: 350px;
+        left: 65px;
+    }
+
+    .btn-1 span {
+        font-size: 15px;
+    }
+
+    .call-to-action {
+        height: 250px;
+    }
+
+    .title-1 {
+        padding: 0 100px;
+    }
+
+    .title-1 h2 {
+        font-size: 35px;
+    }
+
+    .btn-2 {
+        padding: 20px 30px;
+    }
+
+    .btn-2 span {
+        font-size: 16px;
+    }
+
+    .text-container-1 {
+        height: 450px;
+    }
+
+    .paragraph-1, .paragraph-2, .paragraph-3 {
+        font-size: 24px;
+        padding: 35px 100px;
+    }
+
+    .slide-show-container {
+        height: 450px;
+    }
+
+    .title-2 h2 {
+        font-size: 38px;
+    }
+
+    .image-container img {
+        height: 330px;
+        width: auto;
+    }
+
+    .text-container-2 {
+        height: 400px;
+    }
+
+    .paragraph-4 p {
+        font-size: 20px;
+        padding: 50px;
+    }
+
+    .btn-3 {
+        padding: 20px 35px;
+    }
+
+    .btn-3 span {
+        font-size: 16px;
+    }
+
+    .paragraph-5 p {
+        font-size: 25px;
+    }
+
+    .paragraph-5 span {
+        font-size: 29px;
+    }
+
+    .footer {
+        height: 520px;
+    }
+
+    .footer-image {
+        height: 80px;
+    }
+
+    .footer-links {
+        height: 300px;
+    }
+
+    .footer-links-1 h2 {
+        font-size: 28px;
+    }
+
+    .locations ul li {
+        font-size: 23px;
+    }
+
+    .footer-links-2 h2 {
+        font-size: 28px;
+    }
+
+    .footer-menu ul li {
+        font-size: 22px;
+    }
+
+    .contact h2 {
+        font-size: 28px;
+    }
+
+    .phone-and-email p {
+        font-size: 20px;
+    }
+
+    .socials {
+        padding: 50px;
+    }
+
+    .socials p {
+        font-size: 25px;
+    }
+
+    .icon {
+        height: 36px;
+    }
+
+    .facebook-icon {
+        height: 35px;
+    }
+
+    .copyright p {
+        font-size: 23px;
+    }
+
+    .context {
+        font-size: 25px;
+        padding-bottom: 20px;
+        width: auto;
+    }
+
+    .context p {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .table {
+        padding: 20px;
+    }
+
+    .table table {
+        width: 550px;
+    }
+
+    .left-table {
+        padding: 10px;
+        width: 130px;
+        font-size: 15px;
+    }
+
+    .right-table {
+        padding: 10px;
+        font-size: 15px;
+        width: 100px;
+    }
+
+    .button-container-4 {
+        padding-bottom: 50px;
+    }
+
+    .button-4 {
+        height: 80px;
+        width: 160px;
+    }
+
+    .button-4 span {
+        font-size: 20px;
+    }
+
+    .footer-logo {
+        padding: 20px;
+    }
+
+    .footer-links-1 h2,
+    .footer-links-2 h2,
+    .contact h2 {
+        font-size: 25px;
+    }
+
+    .locations ul li,
+    .footer-menu ul li a {
+        font-size: 18px;
+    }
+
+    .phone-and-email p {
+        font-size: 13px;
+    }
+
+    .socials {
+        padding: 15px;
+    }
+
+    .icons {
+        padding: 5px;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 868px) and (max-width: 1279px) {
+
+    .header {
+        height: 110px;
+    }
+
+    .toggle-btn {
+        margin-top: 40px;
+    }
+
+    .logo-image {
+        height: 80px;
+    }
+
+    .nav-menu .menu-element {
+        display: none;
+    }
+
+    .toggle-btn {
+        display: block;
+    }
+
+    .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu .menu-element {
+        font-size: 21px;
+    }
+
+    .dropdown-menu.open {
+        height: 425px;
+    }
+
+    .background-text h1 {
+        font-size: 50px;
+        padding: 50px 40px;
+        top: 250px;
+    }
+
+    .btn-1 {
+        padding: 30px 45px;
+        top: 550px;
+        left: 165px;
+    }
+
+    .call-to-action {
+        height: 380px;
+    }
+
+    .btn-1 span {
+        font-size: 18px;
+    }
+
+    .call-to-action {
+        height: 300px;
+    }
+
+    .title-1 h2 {
+        font-size: 45px;
+    }
+
+    .btn-2 {
+        padding: 25px 35px;
+    }
+
+    .btn-2 span {
+        font-size: 18px;
+    }
+
+    .text-container-1 {
+        height: 450px;
+    }
+
+    .paragraph-1, .paragraph-2, .paragraph-3 {
+        font-size: 28px;
+    }
+
+    .slide-show-container {
+        height: 475px;
+    }
+
+    .title-2 h2 {
+        font-size: 40px;
+    }
+
+    .image-container img {
+        height: 350px;
+        width: auto;
+    }
+
+    .text-container-2 {
+        height: 430px;
+    }
+
+    .paragraph-4 p {
+        font-size: 30px;
+        padding: 50px;
+    }
+
+    .btn-3 {
+        padding: 25px 40px;
+    }
+
+    .btn-3 span {
+        font-size: 17px;
+    }
+
+    .paragraph-5 p {
+        font-size: 26px;
+    }
+
+    .paragraph-5 span {
+        font-size: 30px;
+    }
+
+    .footer {
+        height: 550px;
+    }
+
+    .footer-image {
+        height: 80px;
+    }
+
+    .footer-links {
+        height: 300px;
+    }
+
+    .footer-links-1 h2 {
+        font-size: 28px;
+    }
+
+    .locations ul li {
+        font-size: 23px;
+    }
+
+    .footer-links-2 h2 {
+        font-size: 28px;
+    }
+
+    .footer-menu ul li {
+        font-size: 22px;
+    }
+
+    .contact h2 {
+        font-size: 28px;
+    }
+
+    .phone-and-email p {
+        font-size: 20px;
+    }
+
+    .socials {
+        padding: 50px;
+    }
+
+    .socials p {
+        font-size: 25px;
+    }
+
+    .icon {
+        height: 36px;
+    }
+
+    .facebook-icon {
+        height: 35px;
+    }
+
+    .copyright p {
+        font-size: 23px;
+    }
+
+    .context {
+        font-size: 25px;
+        padding-bottom: 20px;
+        width: auto;
+    }
+
+    .context p {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .table {
+        padding: 20px;
+    }
+
+    .table table {
+        width: 550px;
+    }
+
+    .left-table {
+        padding: 10px;
+        width: 130px;
+        font-size: 15px;
+    }
+
+    .right-table {
+        padding: 10px;
+        font-size: 15px;
+        width: 100px;
+    }
+
+    .button-container-4 {
+        padding-bottom: 50px;
+    }
+
+    .button-4 {
+        height: 80px;
+        width: 160px;
+    }
+
+    .button-4 span {
+        font-size: 20px;
+    }
+
+    .footer-logo {
+        padding: 20px;
+    }
+
+    .footer-links-1 h2,
+    .footer-links-2 h2,
+    .contact h2 {
+        font-size: 25px;
+    }
+
+    .locations ul li,
+    .footer-menu ul li a {
+        font-size: 18px;
+    }
+
+    .phone-and-email p {
+        font-size: 13px;
+    }
+
+    .socials {
+        padding: 15px;
+    }
+
+    .icons {
+        padding: 5px;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1919px) {
+    .header {
+        height: 135px;
+    }
+
+    .logo-image {
+        height: 110px;
+        padding: 13px 73px;
+    }
+
+    .nav-menu ul {
+        height: 150px;
+    }
+
+    .menu-element {
+        margin: 20px;
+        padding: 30px 10px;
+        text-align: center;
+        font-size: 24px;
+        height: 30px;
+    }
+
+    .background-text h1 {
+        font-size: 60px;
+        top: 32%;
+        left: 7%;
+    }
+
+    .btn-1 {
+        top: 74%;
+        padding: 35px 43px;
+    }
+
+    .btn-1 span {
+        font-size: 23px;
+    }
+
+    .call-to-action {
+        height: 425px;
+    }
+
+    .title-1 h2 {
+        font-size: 55px;
+        padding: 40px;
+    }
+
+    .btn-2 {
+        padding: 40px 50px;
+    }
+
+    .btn-2 span {
+        font-size: 23px;
+    }
+
+    .text-container-1 {
+        height: 510px;
+    }
+
+    .paragraph-1,
+    .paragraph-2,
+    .paragraph-3 {
+        font-size: 33px;
+    }
+
+    .title-2 h2 {
+        font-size: 43px;
+    }
+
+    .image-container img {
+        height: 325px;
+        width: auto;
+    }
+
+    .paragraph-4 p {
+        font-size: 35px;
+    }
+
+    .btn-3 {
+        padding: 30px 40px;
+    }
+
+    .btn-3 span {
+        font-size: 20px;
+    }
+
+    .socials {
+        padding: 20px 75px;
+    }
+}
